@@ -1,10 +1,16 @@
 
 // The basic input output
 #include <iostream>
+#include <string>
 
 int main()
 {
-	std::cout << "Hello World" << std::endl;
+    std::cout << "Please enter your name: ";
 
-	return 0;
+    std::string Name;
+    std::cin >> Name;
+
+    std::cout << "Hello " << Name << std::endl;
+
+    return 0;
 }
