@@ -29,7 +29,7 @@ endif
 
 
 # The project modules
-MODULES := main
+MODULES := main include
 
 SRC :=
 
