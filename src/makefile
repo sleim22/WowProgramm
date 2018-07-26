@@ -4,8 +4,8 @@ TARGET 	:= $(PROJECT)
 
 DEBUG 	:=
 CACHE	:=
-FLAGS 	:= -Wall -std=c++0x
-LIB 	:=
+FLAGS 	:= -Wall -std=c++0x $(shell curl-config --cflags)
+LIB 	:= $(shell curl-config --libs)
 INC		:=
 
 ENV		:= ../env
