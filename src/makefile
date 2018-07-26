@@ -63,6 +63,7 @@ clean:
 	@$(RM) -f $(TMP_O)/*.o
 	@$(RM) -f $(DFILE)
 
+.DEFAULT_GOAL := build
 build: $(OBJ)
 	@echo Linking...
 	@$(LD) -o $(DIR)/$(TARGET)$(OPTSUFFIX) $(TMP_O)/*.o $(LIB)
