@@ -4,7 +4,7 @@ TARGET 	:= $(PROJECT)
 
 DEBUG 	:=
 CACHE	:=
-FLAGS 	:= -Wall -std=c++0x $(shell curl-config --cflags) $(shell wx-config --cxxflags)
+FLAGS 	:= -Wall -std=gnu++11 $(shell curl-config --cflags) $(shell wx-config --cxxflags)
 LIB 	:= $(shell curl-config --libs) $(shell wx-config --libs)
 INC		:=
 
