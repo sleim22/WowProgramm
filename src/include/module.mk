@@ -1,4 +1,6 @@
 # A module file to describe the dependencies
 
 SRC += \
-	include/curlal.h
+	include/config.h \
+	include/curlal.h \
+	include/utility.h

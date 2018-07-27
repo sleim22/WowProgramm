@@ -29,7 +29,7 @@ endif
 
 
 # The project modules
-MODULES := main include curlal
+MODULES := main include config curlal utility
 
 SRC :=
 
