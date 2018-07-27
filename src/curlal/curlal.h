@@ -7,3 +7,5 @@
  */
 
 #include "../include/curlal.h"
+
+#include <string>
