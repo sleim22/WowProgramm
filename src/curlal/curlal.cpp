@@ -9,3 +9,23 @@
  */
 
 #include "curlal.h"
+
+/**
+ * @brief Initializes the curl library
+ *
+ * @return void
+ */
+void CurlAlInit()
+{
+    curl_global_init(CURL_GLOBAL_ALL);
+}
+
+/**
+ * @brief Cleanup of the connection curl uses
+ *
+ * @return void
+ */
+void CurlAlCleanup()
+{
+    curl_global_cleanup();
+}

@@ -9,4 +9,6 @@
 #ifndef CURLAL_H
 #define CURLAL_H
 
+void CurlAlInit();
+void CurlAlCleanup();
 #endif
