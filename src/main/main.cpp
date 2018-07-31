@@ -36,6 +36,8 @@ class Frame : public wxFrame
 {
 public:
 	Frame();
+private:
+	void OnExit(wxCommandEvent& event);
 };
 
 enum
@@ -55,5 +57,16 @@ bool WoWApp::OnInit()
 Frame::Frame()
 	: wxFrame(NULL, wxID_ANY, "Frame")
 {
+	wxMenu *menuFile = new wxMenu;
+	menuFile->AppendSeparator();
+	menuFile->Append(wxID_EXIT);
+	wxMenuBar *menuBar = new wxMenuBar;
+	menuBar->Append(menuFile, "&File");
+	SetMenuBar(menuBar);
+	Bind(wxEVT_MENU, &Frame::OnExit, this, wxID_EXIT);
+}
 
+void Frame::OnExit(wxCommandEvent& event)
+{
+	Close(true);
 }
